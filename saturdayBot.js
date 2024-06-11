@@ -11,7 +11,7 @@ client.once('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 
     cron.schedule('0 10 * * 6', async () => {
-        const channel = client.channels.cache.get('CANAL');
+        const channel = client.channels.cache.get('1248679671596453999');
         if (channel) {
             const guild = channel.guild;
             const members = await guild.members.fetch();
@@ -27,7 +27,7 @@ client.once('ready', () => {
     });
 
     cron.schedule('0 18 * * 6', async () => {
-        const channel = client.channels.cache.get('CANAL'); 
+        const channel = client.channels.cache.get('1248679671596453999'); 
         if (channel) {
             const guild = channel.guild;
             const members = await guild.members.fetch();

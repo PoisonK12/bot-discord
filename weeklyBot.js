@@ -13,7 +13,7 @@ client.once('ready', () => {
 
     cron.schedule('0 9 * * 1', async () => {
 
-        const channel = client.channels.cache.get('CANAL');
+        const channel = client.channels.cache.get('1248679500049420297');
         if (channel) {
             const guild = channel.guild;
             const members = await guild.members.fetch();

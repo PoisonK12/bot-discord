@@ -12,7 +12,7 @@ client.once('ready', () => {
 
 
     cron.schedule('50 14 * * *', async () => {
-        const channel = client.channels.cache.get('CANAL'); 
+        const channel = client.channels.cache.get('1248679942724653096'); 
         if (channel) {
             channel.send("¡El Stand Up comenzará en 10 minutos!");
         }
@@ -21,7 +21,7 @@ client.once('ready', () => {
     });
 
     cron.schedule('0 17 * * *', async () => {
-        const channel = client.channels.cache.get('CANAL'); 
+        const channel = client.channels.cache.get('1248679942724653096'); 
         if (channel) {
             const guild = channel.guild;
             const members = await guild.members.fetch();
